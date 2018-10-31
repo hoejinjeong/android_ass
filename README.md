@@ -384,226 +384,134 @@ git remote rm <원격 저장소>
 
 > 출처 : https://medium.com/@joongwon/git-git-명령어-정리-c25b421ecdbd
 
-헤더 (top)
-H1 ~ H6까지 테그를 #으로 표현
+---
 
-# 헤더 스타일 (h1)
-## 헤더 스타일 (h2)
-### 헤더 스타일 (h3)
-#### 헤더 스타일 (h4)
-##### 헤더 스타일 (h5)
-###### 헤더 스타일 (h6)
-출력 결과
-헤더 스타일 (h1)
-헤더 스타일 (h2)
-헤더 스타일 (h3)
-헤더 스타일 (h4)
-헤더 스타일 (h5)
-헤더 스타일 (h6)
-효과: 다음과 같은 코드와 동일한 결과가 됨
-<h1>헤더 스타일 (h1)</h1>
-<h2>헤더 스타일 (h2)</h2>
-<h3>헤더 스타일 (h3)</h3>
-<h4>헤더 스타일 (h4)</h4>
-<h5>헤더 스타일 (h5)</h5>
-<h6>헤더 스타일 (h6)</h6>
-수평선 (top)
-<hr />와 동일한 결과를 출력
-’-‘, ‘*‘, ‘_‘을 세개 이상 나열하면 수평선을 만듦
-단락 나누기 용도로 많이 사용.
+# Markdown
+
+> 제목(Heading)
+문서를 작성할 때 가장 기본이 되는 제목은 HTML의 <h1>~<h6> 태그와 유사합니다. #의 개수에 따라 글자의 크기가 달라집니다. #은 <h1>, ###은 <h3> ######은 <h6>
+
+# Heading
+### Heading
+###### Heading
+Heading
+Heading
+Heading
+본문(paragraph)
+HTML의 <p>와 같은 본문은 텍스트를 그대로 작성하면 됩니다.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit
+Lorem ipsum dolor sit amet, consectetur adipisicing elit
+
+인용(Blockquotes)
+인용은 >를 넣어서 작성합니다.
+
+> Lorem ipsum dolor sit amet, consectetur adipisicing elit
+>> Lorem ipsum dolor sit amet, consectetur adipisicing elit
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit
+
+리스트
+순서가 없는 리스트(Unordered List)
+* 또는 -를 사용해서 순서가 없는 리스트를 작성할 수 있습니다. tab 또는 2칸 띄어쓰기를 통해 중첩된 항목을 작성할 수 있습니다.
+
+* Frontend
+  * HTML
+  * CSS
+  * JavaScript
+    * Vue.js
+
+- Frondend
+  - HTML
+  - CSS
+  - JavaScript
+    - Vue.js
+Frontend
+HTML
+CSS
+JavaScript
+Vue.js
+Frondend
+HTML
+CSS
+JavaScript
+Vue.js
+순서가 있는 리스트(Ordered List)
+1. HTML
+2. CSS
+3. JavaScript
+HTML
+CSS
+JavaScript
+1. HTML
+1. CSS
+1. JavaScript
+HTML
+CSS
+JavaScript
+1. Frontend
+    1. HTML
+    2. CSS
+    3. JavaScript
+        1. Vue.js
+2. Backend
+Frontend
+HTML
+CSS
+JavaScript
+Vue.js
+Backend
+코드블럭(Code blocks)
+코드블럭은 일반 문장 사이에 단어, 짧은 문장 단위로 표현할 수 있는 방법과 여러줄의 코드를 삽입하는 방법이 있습니다.
+
+단어, 한 줄의 코드를 감싸는 경우 `를 앞뒤로 감쌉니다.
+
+마크다운은 코드블럭을 `<pre>`와 `<code>`로 감쌉니다.
+마크다운은 코드블럭을 <pre>와 <code>로 감쌉니다.
+
+여러줄의 코드를 나타내는 코드블럭의 경우 코드블럭의 시작과 끝을 ```으로 감싸고 내부에 코드를 작성하면 됩니다.
+
+function square(n) {
+  return n * n;
+}
+수평선(Horizontal Rules)
+문단과 문단 사이를 나눌 때 등 사용되는 수평선은 HTML의 <hr />과 같이 동작합니다.
+
+* * *
 ***
-___
-___
-출력 결과
-텍스트 출력 (top)
-별도의 테그 없이 입력된 내용은 <p> ~ <\p> 처리가 됨
+*****
+- - -
+---------------------------------------
+링크(Links)
+HTML의 하이퍼링크와 같은 링크는 다음과 같이 작성합니다. title은 생략이 가능합니다.
 
-markdown은 직관적이고 간단한 문법으로 컨텐츠 관리에 매우 효과적입니다.
-효과: 다음과 같은 코드와 동일한 결과가 됨
-<p>markdown은 직관적이고 간단한 문법으로 컨텐츠 관리에 매우 효과적입니다.</p>
-텍스트 강조 (top)
-*single asterisks* - 기울임체
-_single underscores_ - 기울임체
-**double asterisks** - 굵은글씨체
-__double underscores__ - 기울임체/굵은글씨체
-***triple underscores*** - 기울임체/굵은글씨체
-~~cancelline~~ - 취소줄
-결과 출력
+[example](http://example.com "title")
 
- 
-single asterisks - 기울임체
-single underscores - 기울임체
-double asterisks - 굵은글씨체 
-double underscores - 기울임체/굵은글씨체
-triple underscores - 기울임체/굵은글씨체 
-cancelline - 취소줄
+검색엔진은 [구글](https://www.google.com "구글")을 사용합니다.
+example
 
-인용 (top)
-분문 중 인용된 글을 표시할 때 사용하며, “>” 기호를 모든 줄 앞에 붙임.
-”>” 기호의 개수에 따라 들여쓰기 레벨 조정 가능
-인용 블록 안에서 다른 마크다운 테그를 포함할 수 있음
-인용 블록 안에서 중첩 인용 표기 가능
-인용 예제 1: 기본 스타일
-> 인용되는 글입니다. > 인용되는 글의 두 번째 줄. > 인용되는 글의 세 번째 줄.
-출력 결과
-인용되는 글입니다. 
-인용되는 글의 두 번째 줄.
-인용되는 글의 세 번째 줄. 
+검색엔진은 구글을 사용합니다.
 
-인용문의 레벨을 설정 할 수 있음
-인용 예제 2: 중첩 인용 및 스타일 적용
-> 인용되는 첫 번째 줄입니다.
->> 인용되는 내용 안에서 다시 인용되는 부분입니다.
-> (인용 수준을 변경할 때 이렇게 빈 줄 하나 넣어주세요)
-> 꺽쇠 한 번만 쓰면 다시 상위 수준으로 표시됩니다.
-> ###### 인용문 내부 헤더
-인용되는 첫 번째 줄입니다.
+강조(Emphasis)
+HTML의 <em>과 같은 동작을 하는 강조는 *, _가 있고 <strong>은 **와 __를 사용합니다. 취소선은 ~~을 사용합니다.
 
-인용되는 내용 안에서 다시 인용되는 부분입니다.
+*강조*한 텍스트
+_강조_한 텍스트
 
-(인용 수준을 변경할 때 이렇게 빈 줄 하나 넣어주세요)
+강조한 텍스트
 
-꺽쇠 한 번만 쓰면 다시 상위 수준으로 표시됩니다.
+**강조**한 텍스트
+__강조__한 텍스트
+강조한 텍스트
 
-인용문 내부 헤더
-인용 예제 2: tab 을 적용한 인용
-인용 기호 앞에 tab을 입력하면 인용문의 들여 쓰기를 작성 가능.
-> 인용되는 글입니다. > 인용되는 글의 두 번째 줄. > 인용되는 글의 세 번째 줄.
-출력 결과
+~~취소~~한 텍스트
+취소한 텍스트
 
-인용되는 글입니다. 
-인용되는 글의 두 번째 줄.
-인용되는 글의 세 번째 줄. 
-인용문의 레벨을 설정 할 수 있음
+이미지 삽입(Images)
+이미지는 역시 HTML의 <img>태그와 동일하게 작동합니다. 대체 택스트를 삽입할 수 있으며, 링크 또는 로컬의 이미지파일을 연결할 수 있습니다.
 
-목록 (top)
-MarkDown으로 숫자 리스트, 블릿 리스트를 표현할 수 있음.
-순차가 없는 리스트를 표현할 때는 ‘*‘, ‘+’, ‘-” 기호 사용 가능.
-순차가 있는 리스트를 표현할 때 ‘숫자’ 사용용
-* 리스트1 + 리스트2 * 서브 리스트1 * 서브리스트 2 - 리스트3 1. 순차 리스트1 2. 순차 리스트2
-출력 결과
-
-리스트1
-
-리스트2
-
-서브 리스트1
-서브리스트 2
-리스트3
-
-순차 리스트1
-순차 리스트2
-코드 (top)
-코드 유형 1: 공백
-4개의 공백 또는 하나의 탭으로 들여쓰기를 만나면 변환되기 시작하여 들여쓰지 않은 행을 만날때까지 변환이 계속됨.
-
-공백 없이 바로 시작...
-
-    스페이스 4개로 시작
-    스페이스 4개로 시작
-
-공백 없이 바로 시작...
-출력 결과
-공백 없이 바로 시작…
-
-스페이스 4개로 시작
-스페이스 4개로 시작
-공백 없이 바로 시작…
-
-코드 유형 2: 코드 블록
-코드 첫라인 앞과 마지막 라인 다음에 “`” (fense) 설치
-코드 유형 3: 인라인 코드
-스칼라에서는 `val a:Int = 3`과 같은 형식으로 변수를 선언합니다.
-출력 결과
-스칼라에서는 val a:Int = 3과 같은 형식으로 변수를 선언합니다.
-
-테이블 (top)
-| 이름   | 설명  | 나이 |
-| ----- | ---- | --- |
-| 김태완  | 아빠  | 40 |
-| 임선영  | 엄마  | 30 |
-| 김민수  | 아들  | 2  |
-이름	설명	나이
-김태완	아빠	40
-임선영	엄마	30
-김민수	아들	2
-테이블 정렬
-테이블 정렬: 헤더와 row 구분 자에 적용
-오른쪽 정렬
-—-:
-왼쪽 정렬
-:—-
-가운데 정렬
-:—-:
-| 이름   | 설명  | 나이 |
-| :----- | ----: | :---: |
-| 김태완  | 아빠  | 40 |
-| 임선영  | 엄마  | 30 |
-| 김민수  | 아들  | 2  |
-이름	설명	나이
-김태완	아빠	40
-임선영	엄마	30
-김민수	아들	2
-링크 (top)
-기본 링크
-기본 문법: [링크걸 문구](http://주소)
-[taewan.kim](http://taewan.kim)
-HTML 변환 결과
-<a href="http://taewan.kim">taewan.kim</a>
-출력 결과
-taewan.kim
-
-타이틀을 포함하는 링크
-기본 문법: [링크걸 문구](http://주소 “타이틀 문구”)
-“타이틀 문구”는 툴팁으로 표현 됨
-[taewan.kim](http://taewan.kim "김태완 블러그")
-HTML 변환 결과
-<a href="https://taewan.kim" title="김태완 블러그">taewan.kim</a>
-출력 결과
-taewan.kim
-
-참조 링크
-주소를 id로 참조
-[id] 형식으로 지정
-    [구글][1]
-    [1]: http://www.google.com
-출력 결과
-구글
-
-주소만으로 링크
-주소를 “<“와 “>“기호로 감싸서 사용
-<http://taewan.kim>
-HTML 변환 결과
-<a href="https://taewan.kim">http://taewan.kim</a>
-출력 결과
-http://taewan.kim
-
-네임드 앵커
-네임드 앵커는 특정 앵커로 점프하는 용도로 적합.
-
-### 테이블 구성
-  * [1장](#chapter-1)
-  * [2장](#chapter-2)
-  * [3장](#chapter-3)
-
-###### 1장 <a id="chapter-1"></a>
-1장의 내용은.....
-
-###### 2장 <a id="chapter-2"></a>
-2장의 내용은.....
-
-###### 3장 <a id="chapter-3"></a>
-3장의 내용은.....
-출력 결과
-테이블 구성
-1장
-2장
-3장
-1장
-1장의 내용은…..
-
-2장
-2장의 내용은…..
-
-3장
-3장의 내용은…..
+![대체 텍스트](/경로/example.jpg)
+![대체 텍스트](링크)
+![Github](./public/img/3/github.png)
