@@ -462,9 +462,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
 3. JavaScript
 ```
 
-1. HTML
-2. CSS
-3. JavaScript
+ 1. HTML
+ 2. CSS
+ 3. JavaScript
 
 ```
 1. HTML
@@ -472,9 +472,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
 1. JavaScript
 ```
 
-1. HTML
-1. CSS
-1. JavaScript
+ 1. HTML
+ 1. CSS
+ 1. JavaScript
 
 ```
 1. Frontend
@@ -486,10 +486,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
 ```
 
 1. Frontend
-  1. HTML
-2. CSS
-3. JavaScript
-1. Vue.js
+    1. HTML
+    2. CSS
+    3. JavaScript
+       1. Vue.js
 2. Backend
 
 
