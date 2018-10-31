@@ -443,15 +443,16 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
 ```
 
 * Frontend
-* HTML
-* CSS
-* JavaScript
-* Vue.js
+ * HTML
+ * CSS
+ * JavaScript
+   * Vue.js
+   
 - Frondend
-- HTML
-- CSS
-- JavaScript
-- Vue.js
+ - HTML
+ - CSS
+ - JavaScript
+   - Vue.js
 
 + #### 순서가 있는 리스트(Ordered List)
 
@@ -485,7 +486,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
 ```
 
 1. Frontend
-1. HTML
+  1. HTML
 2. CSS
 3. JavaScript
 1. Vue.js
