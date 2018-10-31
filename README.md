@@ -401,6 +401,7 @@ git remote rm <원격 저장소>
 ### Heading
 ###### Heading
 
+
 > ## 본문(paragraph)
 #### HTML의 `<p>`와 같은 본문은 텍스트를 그대로 작성하면 됩니다.
 
@@ -408,7 +409,7 @@ git remote rm <원격 저장소>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit
 ```
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+Lorem ipsum dolor sit amet, consectetur adipisicing elit
 
 
 > ## 인용(Blockquotes)
@@ -417,11 +418,11 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
 ```
 > Lorem ipsum dolor sit amet, consectetur adipisicing elit
 >> Lorem ipsum dolor sit amet, consectetur adipisicing elit
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit
 ```
+
+> Lorem ipsum dolor sit amet, consectetur adipisicing elit
+>> Lorem ipsum dolor sit amet, consectetur adipisicing elit
+
 
 > ## 리스트
 + #### 순서가 없는 리스트(Unordered List)
@@ -439,45 +440,57 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit
   - CSS
   - JavaScript
     - Vue.js
-Frontend
-HTML
-CSS
-JavaScript
-Vue.js
-Frondend
-HTML
-CSS
-JavaScript
-Vue.js
 ```
 
+* Frontend
+* HTML
+* CSS
+* JavaScript
+* Vue.js
+- Frondend
+- HTML
+- CSS
+- JavaScript
+- Vue.js
+
 + #### 순서가 있는 리스트(Ordered List)
+
 ```
 1. HTML
 2. CSS
 3. JavaScript
-HTML
-CSS
-JavaScript
+```
+
+1. HTML
+2. CSS
+3. JavaScript
+
+```
 1. HTML
 1. CSS
 1. JavaScript
-HTML
-CSS
-JavaScript
+```
+
+1. HTML
+1. CSS
+1. JavaScript
+
+```
 1. Frontend
     1. HTML
     2. CSS
     3. JavaScript
         1. Vue.js
 2. Backend
-Frontend
-HTML
-CSS
-JavaScript
-Vue.js
-Backend
 ```
+
+1. Frontend
+1. HTML
+2. CSS
+3. JavaScript
+1. Vue.js
+2. Backend
+
 
 > ## 코드블럭(Code blocks)
 #### 코드블럭은 일반 문장 사이에 단어, 짧은 문장 단위로 표현할 수 있는 방법과 여러줄의 코드를 삽입하는 방법이 있습니다.
@@ -486,8 +499,8 @@ Backend
 
 ```
  마크다운은 코드블럭을 `<pre>`와 `<code>`로 감쌉니다.
- 마크다운은 코드블럭을 <pre>와 <code>로 감쌉니다.
-```
+``` 
+ 마크다운은 코드블럭을 `<pre>`와 `<code>`로 감쌉니다.
 
 + #### 여러줄의 코드를 나타내는 코드블럭의 경우 코드블럭의 시작과 끝을 ```으로 감싸고 내부에 코드를 작성하면 됩니다.
 
@@ -496,6 +509,7 @@ function square(n) {
   return n * n;
 }
 ```
+
 
 > ## 수평선(Horizontal Rules)
 #### 문단과 문단 사이를 나눌 때 등 사용되는 수평선은 HTML의 `<hr />`과 같이 동작합니다.
@@ -508,6 +522,7 @@ function square(n) {
 ---------------------------------------
 ```
 
+
 > ## 링크(Links)
 #### HTML의 하이퍼링크와 같은 링크는 다음과 같이 작성합니다. title은 생략이 가능합니다.
 
@@ -515,10 +530,12 @@ function square(n) {
 [example](http://example.com "title")
 
 검색엔진은 [구글](https://www.google.com "구글")을 사용합니다.
-example
-
-검색엔진은 구글을 사용합니다.
 ```
+
+[example](http://example.com "title")
+
+검색엔진은 [구글](https://www.google.com "구글")을 사용합니다.
+
 
 > ## 강조(Emphasis)
 #### HTML의 `<em>`과 같은 동작을 하는 강조는 `*, _`가 있고 `<strong>`은 `**`와 `__`를 사용합니다. 취소선은 `~~`을 사용합니다.
@@ -526,16 +543,23 @@ example
 ```
 *강조*한 텍스트
 _강조_한 텍스트
+```
 
-강조한 텍스트
+*강조*한 텍스트
 
+```
 **강조**한 텍스트
 __강조__한 텍스트
-강조한 텍스트
+```
+
+**강조**한 텍스트
+
+```
+~~취소~~한 텍스트
+```
 
 ~~취소~~한 텍스트
-취소한 텍스트
-```
+
 
 > ## 이미지 삽입(Images)
 #### 이미지는 역시 HTML의 <img>태그와 동일하게 작동합니다. 대체 택스트를 삽입할 수 있으며, 링크 또는 로컬의 이미지파일을 연결할 수 있습니다.
