@@ -395,10 +395,10 @@ git remote rm <원격 저장소>
 # Heading
 ### Heading
 ###### Heading
-Heading
-Heading
-Heading
 ```
+# Heading
+### Heading
+###### Heading
 
 > ## 본문(paragraph)
 #### HTML의 `<p>`와 같은 본문은 텍스트를 그대로 작성하면 됩니다.
@@ -521,7 +521,7 @@ example
 #### HTML의 `<em>`과 같은 동작을 하는 강조는 `*, _`가 있고 `<strong>`은 `**`와 `__`를 사용합니다. 취소선은 `~~`을 사용합니다.
 
 ```
-`*강조*한 텍스트`
+*강조*한 텍스트
 _강조_한 텍스트
 
 강조한 텍스트
