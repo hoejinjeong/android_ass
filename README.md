@@ -396,6 +396,7 @@ git remote rm <원격 저장소>
 ### Heading
 ###### Heading
 ```
+
 # Heading
 ### Heading
 ###### Heading
@@ -405,8 +406,10 @@ git remote rm <원격 저장소>
 
 ```
 Lorem ipsum dolor sit amet, consectetur adipisicing elit
-Lorem ipsum dolor sit amet, consectetur adipisicing elit
 ```
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+
 
 > ## 인용(Blockquotes)
 #### 인용은 `>`를 넣어서 작성합니다.
